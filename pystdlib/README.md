@@ -37,6 +37,7 @@ Only tested on Python 3.10.1! (Should run on any Python 3.x versions tho)<br>
 >>> <br>
 >>> function `Iota.reset()`:<br>
 >>> Reset the value of `Iota.iota_counter`
+><br>
 >
 >> function `pystdlib.hcf(msg:str = '', die:bool = False) -> NoReturn`:<br>
 >> Halt and Catch Fire.<br>
