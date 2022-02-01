@@ -1,44 +1,46 @@
 # PYSTDLIB #
-My personal convenience classes, functions and whatnots. Named after the C standard library, because I'm too lazy to be original.
+My personal convenience classes, functions and whatnots. Named after the C standard library, because I'm too lazy to be original.<br>
 
 
 ## Notes #
-Only tested on Python 3.10.1! (Should run on any Python 3.x versions tho)
+Only tested on Python 3.10.1! (Should run on any Python 3.x versions tho)<br>
 
 
 ## Installation #
  ### Normal installation #
-  To install pystdlib just to use it, run:
-  > Windows:
-  >>`py -m pip install pystdlib`
-  > MacOS & Linux:
-  >>`python3 -m pip install pystdlib`
+  To install pystdlib just to use it, run:<br>
+  > Windows:<br>
+  >>`py -m pip install pystdlib`<br>
+  >
+  > MacOS & Linux:<br>
+  >>`python3 -m pip install pystdlib`<br>
  
  ### Developer installation #
-  To install pystdlib with the needed development packages, run:
-  > Windows:
-  >> `py -m pip install -e .[dev]`
-  > MacOS & Linux:
-  >> `python3 -m pip install -e .[dev]`
+  To install pystdlib with the needed development packages, run:<br>
+  > Windows:<br>
+  >> `py -m pip install -e .[dev]`<br>
+  >
+  > MacOS & Linux:<br>
+  >> `python3 -m pip install -e .[dev]`<br>
  
 
 
 ## Documentation #
-> module `pystdlib`:
->> class `pystdlib.Iota`:
->> A Python implementation of the `iota` keyword in Go.
->>> int `Iota.iota_counter`:
->>> Integer representing the current value of the `Iota` instance.
->>>
->>> function `Iota.iota()`:
->>> Return the current value of `Iota.iota_counter` and increment
->>
->>> function `Iota.reset()`:
+> module `pystdlib`:<br>
+>> class `pystdlib.Iota`:<br>
+>> A Python implementation of the `iota` keyword in Go.<br>
+>>> int `Iota.iota_counter`:<br>
+>>> Integer representing the current value of the `Iota` instance.<br>
+>>><br>
+>>> function `Iota.iota()`:<br>
+>>> Return the current value of `Iota.iota_counter` and increment<br>
+>>> <br>
+>>> function `Iota.reset()`:<br>
 >>> Reset the value of `Iota.iota_counter`
 >
->> function `pystdlib.hcf(msg:str = '', die:bool = False) -> NoReturn`:
->> Halt and Catch Fire.
->> Depending on `die`:
+>> function `pystdlib.hcf(msg:str = '', die:bool = False) -> NoReturn`:<br>
+>> Halt and Catch Fire.<br>
+>> Depending on `die`:<br>
 >>- if `die` is set, then print `msg` and exit with code 1;
 >>- else assert `False` with message `msg`.
 
@@ -46,7 +48,7 @@ Only tested on Python 3.10.1! (Should run on any Python 3.x versions tho)
 
 ## Examples #
 ```python
->>>  import pystdlib as std
+>>> import pystdlib as std
 >>> i = std.Iota() # examples for the Iota instance
 >>> i.iota() # iota_counter is now 1
 0
@@ -65,5 +67,5 @@ File "<stdin>", line 1, in  <module>
 AsserionError: Look, it's an assertion!
 >>>  hcf(die = True)
 
-[Program finished with  exit code 0]
+[Program finished with  exit code 1]
 ```
