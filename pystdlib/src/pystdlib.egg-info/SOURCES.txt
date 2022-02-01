@@ -1,0 +1,7 @@
+README.md
+setup.py
+src/pystdlib.py
+src/pystdlib.egg-info/PKG-INFO
+src/pystdlib.egg-info/SOURCES.txt
+src/pystdlib.egg-info/dependency_links.txt
+src/pystdlib.egg-info/top_level.txt
